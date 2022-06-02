@@ -1,0 +1,25 @@
+# Base packages. File used by pip-compile to generate the file
+# requirements.txt to create a Binder-compatible repo.
+#
+# NOTE: This file should list all Python libraries that your notebooks depend
+# ------------------------------------------------------------------------------
+altair==4.2.0
+bokeh==2.4.3
+bqplot==0.11.0
+datascience==0.17.2
+ffmpeg==1.4
+ipython==7.34.0
+ipywidgets==7.6.3
+matplotlib==3.4.2
+matplotlib-inline==0.1.2
+networkx==2.6.3
+numpy==1.20.3
+pandas==1.2.4
+plotly==4.14.3
+scikit-learn==0.24.2
+scipy==1.6.3
+seaborn==0.11.1
+sklearn==0.0
+statsmodels==0.12.2
+vega-datasets==0.9.0
+zipp==3.4.0

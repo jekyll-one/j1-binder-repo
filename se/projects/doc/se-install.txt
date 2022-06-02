@@ -1,0 +1,33 @@
+
+
+https://www.tecchannel.de/a/die-besten-tools-zur-download-optimierung,449013,14
+
+https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/
+
+https://www.toolsqa.com/selenium-webdriver/selenium-headless-browser-testing/
+
+https://www.selenium.dev/selenium-ide/docs/en/introduction/command-line-runner
+
+https://docs.npmjs.com/creating-a-package-json-file
+
+
+---
+
+
+https://www.tecchannel.de/a/die-besten-tools-zur-download-optimierung,449013,14
+
+https://www.selenium.dev/selenium-ide/docs/en/introduction/command-line-runner
+
+Install Browser Add-On für selenium (to cteate SE Project files)
+
+npm install -g selenium-side-runner
+npm install -g selenium-webdriver
+
+
+For Chrome, you'll need ChromeDriver.
+
+> npm install -g chromedriver
+set PATH=%PATH%;C:\DevTools\NodeJS\node_modules\chromedriver\lib\chromedriver
+
+
+selenium-side-runner C:/ComTools/SE/projects/simple-open.side

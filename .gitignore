@@ -1,0 +1,12 @@
+# Unneeded files used/created by Jupyter
+# ------------------------------------------------------------------------------
+\.ipynb_checkpoints/
+
+
+# Unneeded files used/created by Notebooks
+# ------------------------------------------------------------------------------
+**/notebooks/j1/*.mp4
+
+**/notebooks/bokeh-tutorial/plot.html
+**/notebooks/bokeh-tutorial/plot.png
+**/notebooks/bokeh-tutorial/plot.svg

@@ -1,0 +1,8 @@
+pip install pip-tools
+
+pip-compile
+Usage: pip-compile [OPTIONS] [SRC_FILES]...
+Try 'pip-compile -h' for help.
+
+Error: Invalid value: If you do not specify an input file, the default
+is requirements.in or setup.py

@@ -1,0 +1,35 @@
+{
+  "id": "39e4f902-da87-4c83-bcb1-bae2c098e0c3",
+  "version": "2.0",
+  "name": "se-fake-netlify",
+  "url": "https://j1-preview-netlify.netlify.app/",
+  "tests": [{
+    "id": "f0583d20-53a9-488b-990c-c3a307d006a6",
+    "name": "open-fake",
+    "commands": [{
+      "id": "288b6fa9-3dd3-4a41-9050-0526aad46116",
+      "comment": "",
+      "command": "open",
+      "target": "https://j1-preview-netlify.netlify.app/pages/public/se-fake/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bc34056-dc11-460d-8d4d-c0eb015bd5c3",
+      "comment": "",
+      "command": "pause",
+      "target": "60000",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5af764ab-feae-4381-8eb8-a90a6c82e495",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f0583d20-53a9-488b-990c-c3a307d006a6"]
+  }],
+  "urls": ["https://j1-preview-netlify.netlify.app/"],
+  "plugins": []
+}
