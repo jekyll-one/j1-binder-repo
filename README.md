@@ -42,12 +42,12 @@ pages).
 
 ## Python environment with a requirements file
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/jekyll-one/jekyll-one/j1-binder-repo/main)
+[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/jekyll-one/j1-binder-repo/main)
 
 A Binder-compatible repo using a requirements file `requirements.txt` file.
 Access this Binder at the following URL:
 
-http://mybinder.org/v2/gh/jekyll-one/jekyll-one/j1-binder-repo/main
+http://mybinder.org/v2/gh/jekyll-one/j1-binder-repo/main
 
 ### Notes
 
