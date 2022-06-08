@@ -8,9 +8,9 @@ based on a requirements file `requirements.txt`.
 Added the base **OS package** for `ffmeg` to make it usable in Jupyter
 Notebooks for e.g `matplotlib` animations.
 
-### NB config
+## Notebook configuration
 
-#### matplotlib animation
+### matplotlib animation
 
 The method (of the animation instances) to manage the player is controlled
 by the `animation` rc parameter.
@@ -23,7 +23,7 @@ and "jshtml".
 *  jshtml:  use the interactive JavaScript widget
 
 The default is none to not display a player. To display the native HTML5
-player, # set it to `html5`. For the interactive JavaScript widget to
+player, set it to `html5`. For the interactive JavaScript widget to
 `jshtml`.
 
 ```
@@ -31,18 +31,23 @@ rc('animation', html='html5', embed_limit='512')
 # rc('animation', html='jshtml', embed_limit='512')
 ```
 
+The size of an animation (a video file) may exceed the default limit. To make
+sure the animation get loaded (embedded), extend the `embed_limit`
+to `512` MB.
+
 **NOTE**: The JavaScript widgets referenced to **jshtml** does currently
-**not** work.
+**not** work for notebooks integrated via the NBI module (into static web
+pages).
 
 
-## Python environment with a requirements.txt
+## Python environment with a requirements file
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/jekyll-one/j1-binder-requirements-example/main)
+[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/jekyll-one/jekyll-one/j1-binder-repo/main)
 
-A Binder-compatible repo with a `requirements.txt` file. Access this Binder
-at the following URL
+A Binder-compatible repo using a requirements file `requirements.txt` file.
+Access this Binder at the following URL:
 
-http://mybinder.org/v2/gh/jekyll-one/j1-binder-requirements-example/main
+http://mybinder.org/v2/gh/jekyll-one/jekyll-one/j1-binder-repo/main
 
 ### Notes
 
@@ -54,9 +59,9 @@ image) using:
 pip install -r requirements.txt
 ```
 
-The base Binder image contains **no** extra dependencies, so be as explici
+The base Binder image contains **no** extra dependencies, so be as explicit
 as possible in defining the packages that you need. This includes specifying
-**explicit** versions wherever possible.
+**explicit** versions wherever **possible**.
 
 If you do specify strict versions, it is important to do so for **all**
 your dependencies, not just direct dependencies. Strictly specifying only
@@ -65,17 +70,17 @@ some dependencies is a recipe for environments breaking over time.
 [pip-compile](https://github.com/jazzband/pip-tools/) is a handy tool for
 combining loosely specified dependencies with a fully frozen environment.
 You write a requirements.in with just the dependencies you need and pip-compile
-will generate a `requirements.txt` with all the strict packages and versions
-that would come from installing that package right now. That way, you only
-need to specify what you actually know you need, but you also get a snapshot
-of your environment.
+will **generate** a `requirements.txt` for you with all the strict packages
+and versions that would come from installing that package right now. That way,
+you only need to specify what you actually know you need, but you also get a
+snapshot of your (currently used) environment.
 
 
-#### Install via pip
+#### Install pip-tools via pip
 
 pip install pip-tools
 
-#### Create a requirements file  `requirements.txt`
+#### Create a requirements file
 
 First, create a file `requirements.in` that contails all Python libraries
 required to run your notebooks like so:
@@ -123,11 +128,13 @@ Run:
 ```bash
 pip-compile --output-file requirements.txt
 ```
+
 in your Binder repo folder the input file `requirements.in` resides.
 
 **NOTE**: If you are on `Windows`, remove all `Win32`-related libraries
 from the resulting file `requirements.txt` as they are **not** needed
 for a Binder build targetting an `Linux` OS like:
+
 ```
 pywin32==304
     # via jupyter-core
