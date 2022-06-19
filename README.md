@@ -1,3 +1,5 @@
+[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/jekyll-one/j1-binder-repo/main?target=_blank)
+
 # Binder Repo example for the J1 NBI module
 
 Configuration settings and all notebooks used by the J1 NBI Integration
@@ -10,13 +12,15 @@ Notebooks for e.g `matplotlib` animations.
 
 ## Notebook configuration
 
+To use `ffmeg`, some additional configurations are needed for notebooks
+using the `animation` feature of `MathPlotlib`.
+
 ### matplotlib animation
 
 The method (of the animation instances) to manage the player is controlled
 by the `animation` rc parameter.
 
-The rc parameter currently supports values of "none", "html5"
-and "jshtml".
+The rc parameter currently supports values of "none", "html5" and "jshtml".
 
 *  none:    no player (display) is shown    
 *  html5:   use the native HTML5 player widget
@@ -40,14 +44,11 @@ to `512` MB.
 pages).
 
 
-## Python environment with a requirements file
+## Build environment using a requirements file
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/jekyll-one/j1-binder-repo/main)
-
-A Binder-compatible repo using a requirements file `requirements.txt` file.
-Access this Binder at the following URL:
-
-http://mybinder.org/v2/gh/jekyll-one/j1-binder-repo/main
+A Binder-compatible repo using a requirements file `requirements.txt` is
+avaiable on Github to build the Docker image running Jupyter. Access this
+Binder repo from the URL: &nbsp; <a href="http://mybinder.org/v2/gh/jekyll-one/j1-binder-repo/main" target="_blank">j1-binder-repo</a>.
 
 ### Notes
 
@@ -59,7 +60,9 @@ image) using:
 pip install -r requirements.txt
 ```
 
-The base Binder image contains **no** extra dependencies, so be as explicit
+under the hood.
+
+A base Binder image contains **no** extra dependencies, so be as explicit
 as possible in defining the packages that you need. This includes specifying
 **explicit** versions wherever **possible**.
 
@@ -75,12 +78,11 @@ and versions that would come from installing that package right now. That way,
 you only need to specify what you actually know you need, but you also get a
 snapshot of your (currently used) environment.
 
-
-#### Install pip-tools via pip
+#### Installing pip-tools via pip
 
 pip install pip-tools
 
-#### Create a requirements file
+#### Creating a requirements file
 
 First, create a file `requirements.in` that contails all Python libraries
 required to run your notebooks like so:

@@ -1,0 +1,67 @@
+# Base packages. File used by pip-compile to generate the file
+# requirements.txt to create a Binder-compatible repo.
+#
+# NOTE: This file should list all Python libraries that your notebooks depend
+# ------------------------------------------------------------------------------
+# Base packages. File used by pip-compile to generate the file
+# requirements.txt to create a Binder-compatible repo.
+#
+# NOTE: This file should list all Python libraries that your notebooks depend
+# ------------------------------------------------------------------------------
+markupsafe==2.0.1
+jinja2==3.0
+nbconvert<7,>=5.6
+numpy<2,>=1
+ipywidgets<8,>=7.5.0
+docopt<1,>=0.6.2
+traitlets<5,>=4.3
+toolz<1,>=0.8
+nbformat<5,>=4.4.0
+bqplot<0.13,>=0.12
+ipython<8,>=6
+traittypes>=0.0.6
+pandas<2.0.0,>=1.0.0
+pygments
+jedi>=0.16
+pickleshare
+setuptools>=18.5
+backcall
+prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0
+matplotlib-inline
+colorama
+decorator
+ipykernel>=4.5.1
+widgetsnbextension~=3.5.0
+pandocfilters>=1.4.1
+defusedxml
+entrypoints>=0.2.2
+bleach
+jupyter-core
+mistune<2,>=0.8.1
+testpath
+jsonschema!=2.5.0,>=2.4
+ipython-genutils
+six
+tornado>=4.2
+jupyter-client
+parso<0.9.0,>=0.8.0
+pyrsistent>=0.14.0
+attrs>=17.4.0
+importlib-metadata
+python-dateutil>=2.7.3
+pytz>=2017.3
+wcwidth
+notebook>=4.4.1
+webencodings
+packaging
+argon2-cffi
+Send2Trash>=1.5.0
+prometheus-client
+terminado>=0.8.3
+pyzmq>=17
+zipp>=0.5
+typing-extensions>=3.6.4
+pyparsing>=2.0.2
+pywinpty>=1.1.0
+cffi>=1.0.0
+pycparser
