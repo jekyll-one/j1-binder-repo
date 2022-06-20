@@ -95,15 +95,16 @@ required to run your notebooks like so:
 # ------------------------------------------------------------------------------
 altair==4.2.0
 bokeh==2.4.3
-bqplot==0.11.0
+bqplot==0.12.14
 datascience==0.17.2
 ffmpeg==1.4
-ipywidgets==7.6.3
+ipython==7.34.0
+ipywidgets==7.7.0
 matplotlib==3.4.2
-matplotlib-inline==0.1.2
+matplotlib-inline==0.1.3
 networkx==2.6.3
-numpy==1.20.3
-pandas==1.2.4
+numpy==1.21.6
+pandas==1.3.5
 plotly==4.14.3
 scikit-learn==0.24.2
 scipy==1.6.3
@@ -111,7 +112,8 @@ seaborn==0.11.1
 sklearn==0.0
 statsmodels==0.12.2
 vega-datasets==0.9.0
-zipp==3.4.0
+zipp==3.8.0
+j1-nbinteract
 ```
 
 **NOTE**: The following packages are considered to be unsafe in a

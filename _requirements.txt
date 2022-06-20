@@ -20,7 +20,7 @@ bleach==5.0.0
     # via nbconvert
 bokeh==2.4.3
     # via -r requirements.in
-bqplot==0.12.14
+bqplot==0.12.33
     # via
     #   -r requirements.in
     #   j1-nbinteract
