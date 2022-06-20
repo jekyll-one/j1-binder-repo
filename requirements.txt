@@ -20,7 +20,7 @@ bleach==5.0.0
     # via nbconvert
 bokeh==2.4.3
     # via -r requirements.in
-bqplot==0.12.14
+bqplot==0.11.9
     # via
     #   -r requirements.in
     #   j1-nbinteract
@@ -85,7 +85,7 @@ ipywidgets==7.7.0
     #   -r requirements.in
     #   bqplot
     #   j1-nbinteract
-j1-nbinteract==1.0.4
+j1-nbinteract==1.0.5
     # via -r requirements.in
 jedi==0.18.1
     # via ipython

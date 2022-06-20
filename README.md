@@ -88,14 +88,14 @@ First, create a file `requirements.in` that contails all Python libraries
 required to run your notebooks like so:
 
 ```
-# Required Python packages. This file is used by pip-compile to generate the
-# requirements file "requirements.txt" to create a Binder-compatible repo.
+# Base packages. File used by pip-compile to generate the file
+# requirements.txt to create a Binder-compatible repo.
 #
 # NOTE: This file should list all Python libraries that your notebooks depend
 # ------------------------------------------------------------------------------
 altair==4.2.0
 bokeh==2.4.3
-bqplot==0.12.14
+bqplot==0.11.9
 datascience==0.17.2
 ffmpeg==1.4
 ipython==7.34.0
@@ -113,7 +113,7 @@ sklearn==0.0
 statsmodels==0.12.2
 vega-datasets==0.9.0
 zipp==3.8.0
-j1-nbinteract
+j1-nbinteract==1.0.5
 ```
 
 **NOTE**: The following packages are considered to be unsafe in a
