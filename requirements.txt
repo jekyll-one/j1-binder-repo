@@ -85,7 +85,7 @@ ipywidgets==7.7.0
     #   -r requirements.in
     #   bqplot
     #   j1-nbinteract
-j1-nbinteract==1.0.5
+j1-nbinteract==1.0.7
     # via -r requirements.in
 jedi==0.18.1
     # via ipython
@@ -234,7 +234,7 @@ pytz==2022.1
     # via pandas
 pyyaml==6.0
     # via bokeh
-pyzmq==23.1.0
+pyzmq==23.2.0
     # via
     #   ipykernel
     #   jupyter-client
